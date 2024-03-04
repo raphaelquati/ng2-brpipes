@@ -1,6 +1,6 @@
 {
   "name": "ng2-brpipes",
-  "version": "9.0.0",
+  "version": "11.0.0",
   "description": "Angular2 pipes for BR types",
   "author": "Filipe Augusto Lima de Souza",
   "repository": {
@@ -22,7 +22,9 @@
     "@angular/common": ">= 2",
     "@angular/core": ">= 2"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "optionalDependencies": {
-    "tslib": "^1.10.0"
   }
 }
