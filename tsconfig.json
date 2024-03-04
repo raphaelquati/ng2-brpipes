@@ -10,7 +10,7 @@
     "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "ES2022",
     "lib": [
       "es2018",
       "dom"
@@ -20,7 +20,8 @@
         "dist/ng2-brpipes/ng2-brpipes",
         "dist/ng2-brpipes"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
