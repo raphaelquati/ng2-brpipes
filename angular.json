@@ -46,6 +46,5 @@
   },
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "ng2-brpipes"
+  }
 }
