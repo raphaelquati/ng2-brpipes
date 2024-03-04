@@ -1,0 +1,22 @@
+name: publish ng2-brpipes
+
+on:
+  release:
+    types: [published]
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: read
+        packages: write
+      steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-node@v4
+          name: Use Node.js
+          with:
+            node-version: '18.13'
+            registry-url: 'https://registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}'
+        - run: npm install
+        - run: npm run build --prod
+        - run: npm publish .\dist\ng2-brpipes

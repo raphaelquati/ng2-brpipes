@@ -3,6 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -25,6 +27,8 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "enableIvy": true,
+    "compilationMode": "partial"
   }
 }
